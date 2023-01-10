@@ -22,10 +22,10 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
+          run_install: true
       - run: |
-          npm install
           node scraping/leaderboard.js
           git config user.name dver-bot
           git add -A
-          git comit -m "[bot] Update Kings League Database"
+          git commit -m "[bot] Update Kings League Database"
           git push origin master
