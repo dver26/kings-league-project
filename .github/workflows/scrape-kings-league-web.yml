@@ -22,7 +22,8 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          run_install: true
+          cache: 'npm'
+          cache-dependency-path: subdir/package-lock.json
       - run: |
           node scraping/leaderboard.js
           git config user.name dver-bot
