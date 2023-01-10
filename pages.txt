@@ -1,0 +1,36 @@
+TEAMS: https://kingsleague.pro/wp-json/wp/v2/teams
+PLAYERS: https://kingsleague.pro/wp-json/wp/v2/players
+PARTIDOS: https://kingsleague.pro/wp-json/wp/v2/partidos
+
+{
+  "name": "kings-league",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev:api": "wrangler dev api/index.js",
+    "publish:api": "wrangler publish api/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cheerio": "1.0.0-rc.12",
+    "node-fetch": "^3.3.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20221111.1",
+    "prettier": "^2.8.2",
+    "standard": "^17.0.0",
+    "vitest": "^0.26.3",
+    "wrangler": "^2.6.2"
+  },
+  "eslintConfig": {
+    "extends": "standard",
+    "rules": {
+      "space-before-function-paren": "off"
+    }
+  }
+}
