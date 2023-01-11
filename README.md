@@ -1,3 +1,5 @@
+[![Deployment Pipeline](https://github.com/dver26/kings-league-project/actions/workflows/pipeline.yml/badge.svg)](https://github.com/dver26/kings-league-project/actions/workflows/pipeline.yml)
+
 # Kings League Project 
 
 ¡No usar! Todavía *Work in progess*
