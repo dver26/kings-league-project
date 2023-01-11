@@ -33,10 +33,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/VictorF26/kings-league-project.git"
+    "url": "git+https://github.com/dver26/kings-league-project.git"
   },
   "bugs": {
-    "url": "https://github.com/VictorF26/kings-league-project/issues"
+    "url": "https://github.com/dver26/kings-league-project/issues"
   },
-  "homepage": "https://github.com/VictorF26/kings-league-project#readme"
+  "homepage": "https://github.com/dver26/kings-league-project#readme"
 }
