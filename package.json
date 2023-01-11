@@ -8,7 +8,7 @@
     "dev:api": "wrangler dev api/index.js",
     "publish:api": "wrangler publish api/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "eslint": "eslint './**/*.{js,jsx}''"
+    "eslint": "eslint './**/*.{js,jsx}'"
   },
   "keywords": [],
   "author": "",
