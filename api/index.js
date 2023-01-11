@@ -1,8 +1,9 @@
 import { Hono } from 'hono'
 import { serveStatic } from 'hono/serve-static.module'
-import leaderboard from '../db/leaderboard.json'
-import presidents from '../db/presidents.json'
-import teams from '../db/teams.json'
+import manifest from '__STATIC_CONTENT_MANIFEST'
+import leaderboard from '../db/leaderboard.json' assert { type: 'json' }
+import presidents from '../db/presidents.json' assert { type: 'json' }
+import teams from '../db/teams.json' assert { type: 'json' }
 
 const app = new Hono()
 
