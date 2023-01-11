@@ -16,11 +16,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      #- uses: actions/checkout@v3
-      #- uses: actions/setup-node@v3
-      - name: Echo the message
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+      - name: Install dependencies
+        run: npm install
+      - name: run scraping
         run: |
-          echo "Hola dver!"
-      - name: Dime la fecha
-        run: date
-      - run: ls -l
+          node scraping/leaderboard.js
+          git config username dver-bot
+          git add -A
+          git commit "[bot] Update Kings League Database"
+          git push origin main
