@@ -1,4 +1,5 @@
 import * as cheerio from 'cheerio'
+import fetch from 'node-fetch'
 import { TEAMS, writeDBFile, PRESIDENTS } from '../db/index.js'
 
 const URLS = {
