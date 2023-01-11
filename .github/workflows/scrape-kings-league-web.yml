@@ -29,5 +29,5 @@ jobs:
           node scraping/leaderboard.js
           git config user.name dver-bot
           git add -A
-          git commit "[bot] Update Kings League Database"
+          git commit -m "[bot] Update Kings League Database"
           git push origin main
