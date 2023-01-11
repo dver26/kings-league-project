@@ -21,3 +21,5 @@ jobs:
       - name: Echo the message
         run: |
           echo "Hola dver!"
+      - name: Dime la fecha
+        run: ls -l
